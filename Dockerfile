@@ -9,6 +9,8 @@ RUN apt-get update && sudo apt-get -y install ca-certificates apt-transport-http
   && wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg  \
   && apt-mark hold openjdk-11-*  && apt-get update && sudo apt-get install unifi -y
 
+
+
 ###### Connect the log file to stdout #############################################################
 #RUN mkdir -p /usr/local/fusionauth/logs \
 #  && touch /usr/local/fusionauth/logs/fusionauth-app.log \
